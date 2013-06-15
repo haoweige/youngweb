@@ -1,0 +1,12 @@
+<#include "../common/html.html"> 
+<@html title="登录页面"> 
+	<form action="submit" method="post" enctype="multipart/form-data">
+		用户名：<input type="text" name="username" <#if username?exists>value="${username}"</#if> /><br/>
+		密码：<input type="text" name="password"/><br/>
+		头像：<input type="file" name="photo"/><br/>
+		<input type="submit" name="提交"/><br/>
+		<#if error?exists>
+			${error}
+		</#if>
+	</form>
+</@html>

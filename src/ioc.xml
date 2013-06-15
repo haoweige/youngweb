@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ioc [
+   <!ELEMENT beans (bean+)> 
+   <!ATTLIST bean id CDATA #REQUIRED  >
+   <!ATTLIST bean class CDATA #REQUIRED>
+]>
+<beans>
+	<bean id="userDao" class="org.youngweb.dao.jdbc.impl.UserDao" />
+	<bean id="submitHandler" class="org.youngweb.login.handler.SubmitHandler" />
+</beans>
